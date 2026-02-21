@@ -85,6 +85,11 @@ go vet ./...        # Static analysis
 
 Requires [ImageMagick](https://imagemagick.org/) (`magick` command).
 
+## Credits
+
+- Font data: [font8x8](https://github.com/dhepper/font8x8) (Public Domain)
+- Sample images generated with [Midjourney](https://www.midjourney.com/)
+
 ## License
 
 MIT
