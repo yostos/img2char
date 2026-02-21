@@ -27,6 +27,9 @@ go.work
 # Project binary
 img2char
 
+# GoReleaser output
+dist/
+
 ### macOS ###
 # General
 .DS_Store
@@ -79,5 +82,8 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+# Claude Code
+.claude/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vim,go

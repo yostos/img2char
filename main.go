@@ -6,15 +6,22 @@ import (
 	"os"
 )
 
+var version = "dev"
 
 // Main Routine
 func main() {
 	verbose := flag.Bool("v", false, "print processing info to stderr")
+	showVersion := flag.Bool("version", false, "print version and exit")
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "Usage: %s [-v] <image-file>\n", os.Args[0])
+		fmt.Fprintf(os.Stderr, "Usage: %s [-v] [-version] <image-file>\n", os.Args[0])
 		flag.PrintDefaults()
 	}
 	flag.Parse()
+
+	if *showVersion {
+		fmt.Println(version)
+		return
+	}
 
 	if flag.NArg() != 1 {
 		flag.Usage()
