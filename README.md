@@ -1,5 +1,9 @@
 # img2char
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go Report Card](https://goreportcard.com/badge/github.com/yostos/img2char)](https://goreportcard.com/report/github.com/yostos/img2char)
+[![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?logo=go&logoColor=white)](https://go.dev/)
+
 ![Input image and ASCII art output side by side](images/sample.png)
 
 A CLI tool that converts monochrome binary images to ASCII art.
@@ -31,9 +35,9 @@ No external dependencies. Go standard library only.
 
 ### Options
 
-| Option | Description | Default |
-|--------|-------------|---------|
-| `-v` | Print processing info to stderr | off |
+| Option | Description                     | Default |
+| ------ | ------------------------------- | ------- |
+| `-v`   | Print processing info to stderr | off     |
 
 ### Input
 
